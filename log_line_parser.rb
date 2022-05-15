@@ -9,13 +9,11 @@ class LogLineParser
     @line = line
   end
 
-  def new_game?
+  def new_match?
     line.match?(NEW_GAME_REGEX)
   end
 
   def kills
-    # 14:02 Kill: 1022 5 22: <world> killed Assasinu Credi by MOD_TRIGGER_HURT
-    # 14:15 Kill: 2 5 10: Zeh killed Assasinu Credi by MOD_RAILGUN
     line.match(KILL_REGEX)&.named_captures
   end
 end

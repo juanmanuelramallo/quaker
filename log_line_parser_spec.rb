@@ -2,8 +2,8 @@ require "rspec"
 require_relative "log_line_parser"
 
 RSpec.describe LogLineParser do
-  describe "#new_game?" do
-    subject { described_class.new(line).new_game? }
+  describe "#new_match?" do
+    subject { described_class.new(line).new_match? }
 
     context "when the line is for a new game" do
       let(:line) { '  3:32 InitGame: \capturelimit\8' }
