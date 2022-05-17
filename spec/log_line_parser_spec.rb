@@ -1,5 +1,5 @@
 require "rspec"
-require_relative "log_line_parser"
+require_relative "../lib/log_line_parser"
 
 RSpec.describe LogLineParser do
   describe "#new_match?" do

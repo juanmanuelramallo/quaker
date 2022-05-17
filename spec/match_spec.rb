@@ -1,5 +1,5 @@
 require "rspec"
-require_relative "match"
+require_relative "../lib/match"
 
 RSpec.describe Match do
   let(:match) { described_class.new }
