@@ -17,7 +17,7 @@ class Quaker
 
       if (killing = parsed_line.killing)
         # What happens if match start is not identified (current_match is empty)
-        @current_match.log_kill(killer: killing["killer"], killed: killing["killed"], means: killing["means"])
+        @current_match.log_kill(killing["killer"], killing["killed"], killing["means"])
       elsif parsed_line.new_match?
         @current_match = Match.new
         @matches << @current_match

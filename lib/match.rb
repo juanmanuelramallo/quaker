@@ -11,14 +11,15 @@ class Match
     hash = @kills.to_h do |killer, kills|
       [
         killer,
-        kills.size - (@kills.dig(WORLD, killer)&.values&.sum || 0)
+        kills.values.flat_map(&:values).sum - (@kills.dig(WORLD, killer)&.values&.sum || 0)
       ]
     end
+
     hash.delete(WORLD)
     hash
   end
 
-  def log_kill(killer:, killed:, means:)
+  def log_kill(killer, killed, means)
     @kills[killer] ||= {}
     @kills[killer][killed] ||= {}
     @kills[killer][killed][means] ||= 0

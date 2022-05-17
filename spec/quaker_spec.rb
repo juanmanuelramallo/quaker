@@ -22,7 +22,7 @@ RSpec.describe Quaker do
             total_kills: 11,
             players: contain_exactly("Isgalamido", "Mocinha"),
             kills: {
-              "Isgalamido" => 3,
+              "Isgalamido" => -5,
               "Mocinha" => 0
             }
           )

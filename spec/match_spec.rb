@@ -5,9 +5,9 @@ RSpec.describe Match do
   let(:match) { described_class.new }
 
   before do
-    match.log_kill(killer: "Juan", killed: "Mateo", means: "MOD_RAILGUN")
-    match.log_kill(killer: "Juan", killed: "FKJ", means: "MOD_RAILGUN")
-    match.log_kill(killer: "world", killed: "Juan", means: "MOD_TRIGGER_HURT")
+    match.log_kill("Juan", "Mateo", "MOD_RAILGUN")
+    match.log_kill("Juan", "FKJ", "MOD_RAILGUN")
+    match.log_kill("world", "Juan", "MOD_TRIGGER_HURT")
   end
 
   describe "#total_kills" do
