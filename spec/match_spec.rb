@@ -43,6 +43,23 @@ RSpec.describe Match do
     end
   end
 
+  describe "#kills_by_means" do
+    subject { match.kills_by_means }
+
+    it "returns a hash with the kill count for each means" do
+      expect(subject).to include(
+        "MOD_TRIGGER_HURT" => 1,
+        "MOD_RAILGUN" => 2
+      )
+    end
+
+    context "when no kills" do
+      subject { described_class.new.kills_by_means }
+
+      it { is_expected.to eq({}) }
+    end
+  end
+
   describe "#to_h" do
     subject { match.to_h }
 
@@ -56,6 +73,21 @@ RSpec.describe Match do
           "FKJ" => 0
         }
       )
+    end
+
+    context "when reporting kills by means" do
+      subject { match.to_h(by_means: true) }
+
+      it "returns the hash of kills by means" do
+        expect(subject).to include(
+          be_a(String) => include(
+            kills_by_means: include(
+              "MOD_TRIGGER_HURT" => 1,
+              "MOD_RAILGUN" => 2
+            )
+          )
+        )
+      end
     end
   end
 end
