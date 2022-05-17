@@ -5,6 +5,7 @@ class Match
 
   def initialize
     @kills = {}
+    @name = "match_#{SecureRandom.uuid}"
   end
 
   def kills
@@ -34,7 +35,7 @@ class Match
 
   def to_h
     {
-      "match_#{SecureRandom.uuid}": {
+      @name => {
         total_kills: total_kills,
         players: players,
         kills: kills
