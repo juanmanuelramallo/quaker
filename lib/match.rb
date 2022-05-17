@@ -8,16 +8,23 @@ class Match
   end
 
   def kills
-    hash = @kills.to_h { |killer, kills| [killer, kills.size] }
+    hash = @kills.to_h do |killer, kills|
+      [
+        killer,
+        kills.size - (@kills.dig(WORLD, killer)&.values&.sum || 0)
+      ]
+    end
     hash.delete(WORLD)
     hash
   end
 
   def log_kill(killer:, killed:, means:)
-    @kills[killer] ||= []
-    @kills[killed] ||= []
+    @kills[killer] ||= {}
+    @kills[killer][killed] ||= {}
+    @kills[killer][killed][means] ||= 0
+    @kills[killed] ||= {}
 
-    @kills[killer].push([killed, means])
+    @kills[killer][killed][means] += 1
   end
 
   def players
@@ -35,6 +42,6 @@ class Match
   end
 
   def total_kills
-    @kills.map { |_killer, kills| kills.size }.sum
+    @kills.values.flat_map(&:values).flat_map(&:values).sum
   end
 end

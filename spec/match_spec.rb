@@ -33,7 +33,7 @@ RSpec.describe Match do
 
     it "returns a hash with the kill count for each player" do
       expect(subject).to include(
-        "Juan" => 2,
+        "Juan" => 1,
         "Mateo" => 0,
         "FKJ" => 0
       )
@@ -51,7 +51,7 @@ RSpec.describe Match do
         total_kills: 3,
         players: contain_exactly("Juan", "Mateo", "FKJ"),
         kills: {
-          "Juan" => 2,
+          "Juan" => 1,
           "Mateo" => 0,
           "FKJ" => 0
         }
