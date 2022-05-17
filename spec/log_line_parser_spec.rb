@@ -18,8 +18,8 @@ RSpec.describe LogLineParser do
     end
   end
 
-  describe "#kills" do
-    subject { described_class.new(line).kills }
+  describe "#killing" do
+    subject { described_class.new(line).killing }
 
     context "when the line is for a kill" do
       let(:line) { "  3:12 Kill: 2 7 7: Oootsimo killed Assasinu Credi by MOD_ROCKET_SPLASH" }

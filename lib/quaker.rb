@@ -1,24 +1,26 @@
+require_relative "match"
+require_relative "log_line_parser"
+
 class Quaker
   attr_reader :file_path
-
-  attr_accessor :current_match
 
   # @param [String]
   def initialize(file_path)
     @file_path = file_path
     @matches = []
+    @current_match = nil
   end
 
   def parse
-    current_match = Match.new
     logs.each do |log|
       parsed_line = LogLineParser.new(log)
 
-      if parsed_line.kills.present?
-        current_match.log_kill(parsed_line.kills)
+      if (killing = parsed_line.killing)
+        # What happens if match start is not identified (current_match is empty)
+        @current_match.log_kill(killer: killing["killer"], killed: killing["killed"], means: killing["means"])
       elsif parsed_line.new_match?
-        @matches << current_match
-        current_match = Match.new
+        @current_match = Match.new
+        @matches << @current_match
       end
     end
 

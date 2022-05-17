@@ -13,7 +13,7 @@ class LogLineParser
     line.match?(NEW_GAME_REGEX)
   end
 
-  def kills
+  def killing
     line.match(KILL_REGEX)&.named_captures
   end
 end
