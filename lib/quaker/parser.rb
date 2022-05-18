@@ -10,14 +10,15 @@ module Quaker
     # @param file_path [String]
     def initialize(file_path)
       @file_path = file_path
-      @matches = []
       @current_match = nil
     end
 
     # Parses a quake game log file and returns a report for each game in the log file.
     #
-    # @return [Array<Hash>]
+    # @return [Array<Quaker::Match>]
     def parse
+      matches = []
+
       logs.each do |log|
         parsed_line = LogLineParser.new(log)
 
@@ -26,11 +27,11 @@ module Quaker
           @current_match.log_kill(killing["killer"], killing["killed"], killing["means"])
         elsif parsed_line.new_match?
           @current_match = Match.new
-          @matches << @current_match
+          matches << @current_match
         end
       end
 
-      @matches.map(&:to_h)
+      matches
     end
 
     private

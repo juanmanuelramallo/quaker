@@ -9,21 +9,17 @@ RSpec.describe Quaker::Parser do
     it "returns a list of all the match reports" do
       expect(subject.size).to eq(2)
       expect(subject).to contain_exactly(
-        include(
-          be_a(Symbol) => include(
-            total_kills: 0,
-            players: [],
-            kills: {}
-          ),
+        have_attributes(
+          total_kills: 0,
+          players: [],
+          kills_by_player: {}
         ),
-        include(
-          be_a(Symbol) => include(
-            total_kills: 11,
-            players: contain_exactly("Isgalamido", "Mocinha"),
-            kills: {
-              "Isgalamido" => -5,
-              "Mocinha" => 0
-            }
+        have_attributes(
+          total_kills: 11,
+          players: contain_exactly("Isgalamido", "Mocinha"),
+          kills_by_player: include(
+            "Isgalamido" => -5,
+            "Mocinha" => 0
           )
         )
       )
