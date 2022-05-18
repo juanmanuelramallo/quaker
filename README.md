@@ -1,5 +1,9 @@
 # Quaker
 
+Solves [this test](./TEST.md).
+
+## Running
+
 To run the script that outputs the report:
 
 ```bash
