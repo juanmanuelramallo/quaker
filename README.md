@@ -1,5 +1,7 @@
 # Quaker
 
+[![CI](https://github.com/juanmanuelramallo/quaker/actions/workflows/ci.yml/badge.svg)](https://github.com/juanmanuelramallo/quaker/actions/workflows/ci.yml)
+
 Solves [this test](./TEST.md).
 
 ## Running
