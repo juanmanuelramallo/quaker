@@ -15,6 +15,12 @@ RSpec.describe Quaker::LogLineParser do
 
       it { is_expected.to eq(false) }
     end
+
+    context "when the line has no space at the beginning" do
+      let(:line) { '234:53 InitGame: \capturelimit\3' }
+
+      it { is_expected.to eq(true) }
+    end
   end
 
   describe "#killing" do

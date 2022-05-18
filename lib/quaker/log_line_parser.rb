@@ -1,6 +1,6 @@
 module Quaker
   class LogLineParser
-    PREFIX_REGEX = Regexp.new('\s+[0-9:]*\s')
+    PREFIX_REGEX = Regexp.new('\A\s*[0-9:]*\s')
     NEW_GAME_REGEX = Regexp.new [PREFIX_REGEX, "InitGame:"].join
     KILL_REGEX = Regexp.new [
       PREFIX_REGEX,
