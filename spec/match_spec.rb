@@ -28,8 +28,8 @@ RSpec.describe Match do
     it { is_expected.to contain_exactly("Juan", "Mateo", "FKJ") }
   end
 
-  describe "#kills" do
-    subject { match.kills }
+  describe "#kills_by_player" do
+    subject { match.kills_by_player }
 
     it "returns a hash with the kill count for each player" do
       expect(subject).to include(

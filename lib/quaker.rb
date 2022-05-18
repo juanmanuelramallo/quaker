@@ -1,16 +1,24 @@
 require_relative "match"
 require_relative "log_line_parser"
 
+# Parses a quake game log file.
+#
+# @example
+#   Quaker.new("./qgames.log").parse #=> [{ :match_1 => ... }]
+#
 class Quaker
   attr_reader :file_path
 
-  # @param [String]
+  # @param file_path [String]
   def initialize(file_path)
     @file_path = file_path
     @matches = []
     @current_match = nil
   end
 
+  # Parses a quake game log file and returns a report for each game in the log file.
+  #
+  # @return [Array<Hash>]
   def parse
     logs.each do |log|
       parsed_line = LogLineParser.new(log)
