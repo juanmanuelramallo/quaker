@@ -1,7 +1,6 @@
-require "rspec"
-require_relative "../lib/log_line_parser"
+require_relative "../spec_helper"
 
-RSpec.describe LogLineParser do
+RSpec.describe Quaker::LogLineParser do
   describe "#new_match?" do
     subject { described_class.new(line).new_match? }
 

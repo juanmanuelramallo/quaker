@@ -1,7 +1,6 @@
-require "rspec"
-require_relative "../lib/match"
+require_relative "../spec_helper"
 
-RSpec.describe Match do
+RSpec.describe Quaker::Match do
   let(:match) { described_class.new }
 
   before do
@@ -80,7 +79,7 @@ RSpec.describe Match do
 
       it "returns the hash of kills by means" do
         expect(subject).to include(
-          be_a(String) => include(
+          be_a(Symbol) => include(
             kills_by_means: include(
               "MOD_TRIGGER_HURT" => 1,
               "MOD_RAILGUN" => 2

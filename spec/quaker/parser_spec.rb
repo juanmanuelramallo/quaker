@@ -1,11 +1,10 @@
-require "rspec"
-require_relative "../lib/quaker"
+require_relative "../spec_helper"
 
-RSpec.describe Quaker do
+RSpec.describe Quaker::Parser do
   describe "#parse" do
     subject { described_class.new(file_path).parse }
 
-    let(:file_path) { File.join(__dir__, "fixtures", "qgames.log") }
+    let(:file_path) { File.join(__dir__, "../fixtures", "qgames.log") }
 
     it "returns a list of all the match reports" do
       expect(subject.size).to eq(2)
