@@ -10,11 +10,15 @@ To run the script that outputs the report:
 ./main
 ```
 
+[Output](./OUTPUT.json)
+
 To generate the report of kills by means:
 
 ```bash
 ./main --by-means
 ```
+
+[Output](./OUTPUT_BY_MEANS.json)
 
 ## API Documentation
 

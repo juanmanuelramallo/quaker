@@ -1,0 +1,395 @@
+[
+  {
+    "match_b17bb551-43fe-41be-bdbb-eddc4f3afaa1": {
+      "total_kills": 0,
+      "players": [],
+      "kills": {}
+    }
+  },
+  {
+    "match_580dc1a2-6580-4755-8164-10d1d7266787": {
+      "total_kills": 11,
+      "players": [
+        "Isgalamido",
+        "Mocinha"
+      ],
+      "kills": {
+        "Isgalamido": -5,
+        "Mocinha": 0
+      }
+    }
+  },
+  {
+    "match_a263838f-6f8f-448c-9408-7246acea3403": {
+      "total_kills": 4,
+      "players": [
+        "Dono da Bola",
+        "Isgalamido",
+        "Mocinha",
+        "Zeh"
+      ],
+      "kills": {
+        "Isgalamido": 1,
+        "Mocinha": 0,
+        "Zeh": -2,
+        "Dono da Bola": -1
+      }
+    }
+  },
+  {
+    "match_2c0dfc8e-b8b7-487b-87b7-887cd88f3e8a": {
+      "total_kills": 105,
+      "players": [
+        "Assasinu Credi",
+        "Dono da Bola",
+        "Isgalamido",
+        "Zeh"
+      ],
+      "kills": {
+        "Isgalamido": 19,
+        "Dono da Bola": 13,
+        "Zeh": 20,
+        "Assasinu Credi": 13
+      }
+    }
+  },
+  {
+    "match_5e4d1bf8-4efe-4818-8590-bc9397f91c9a": {
+      "total_kills": 14,
+      "players": [
+        "Assasinu Credi",
+        "Dono da Bola",
+        "Isgalamido",
+        "Zeh"
+      ],
+      "kills": {
+        "Isgalamido": 2,
+        "Zeh": 1,
+        "Dono da Bola": 0,
+        "Assasinu Credi": 1
+      }
+    }
+  },
+  {
+    "match_27822f07-466d-48cd-aa09-3e09f7596b64": {
+      "total_kills": 29,
+      "players": [
+        "Assasinu Credi",
+        "Dono da Bola",
+        "Isgalamido",
+        "Mal",
+        "Maluquinho",
+        "Oootsimo",
+        "UnnamedPlayer",
+        "Zeh"
+      ],
+      "kills": {
+        "Oootsimo": 8,
+        "Zeh": 7,
+        "Isgalamido": 3,
+        "UnnamedPlayer": 0,
+        "Dono da Bola": 2,
+        "Maluquinho": 0,
+        "Assasinu Credi": 1,
+        "Mal": 0
+      }
+    }
+  },
+  {
+    "match_ec1d704b-bde7-415f-9d96-19e1ff1c6042": {
+      "total_kills": 130,
+      "players": [
+        "Assasinu Credi",
+        "Chessus",
+        "Dono da Bola",
+        "Isgalamido",
+        "Mal",
+        "Oootsimo",
+        "Zeh"
+      ],
+      "kills": {
+        "Zeh": 9,
+        "Dono da Bola": 12,
+        "Assasinu Credi": 22,
+        "Oootsimo": 20,
+        "Isgalamido": 16,
+        "Mal": -3,
+        "Chessus": 0
+      }
+    }
+  },
+  {
+    "match_d0ad05ca-4e8d-4621-b082-4d151add2171": {
+      "total_kills": 89,
+      "players": [
+        "Assasinu Credi",
+        "Dono da Bola",
+        "Isgalamido",
+        "Mal",
+        "Oootsimo",
+        "Zeh"
+      ],
+      "kills": {
+        "Oootsimo": 16,
+        "Isgalamido": 20,
+        "Zeh": 12,
+        "Assasinu Credi": 10,
+        "Mal": -2,
+        "Dono da Bola": 3
+      }
+    }
+  },
+  {
+    "match_69e552d5-c08e-4ae0-97ba-e5fb8c62df8f": {
+      "total_kills": 67,
+      "players": [
+        "Assasinu Credi",
+        "Chessus",
+        "Dono da Bola",
+        "Isgalamido",
+        "Mal",
+        "Oootsimo",
+        "Zeh"
+      ],
+      "kills": {
+        "Assasinu Credi": 10,
+        "Oootsimo": 9,
+        "Zeh": 12,
+        "Mal": 3,
+        "Dono da Bola": 2,
+        "Isgalamido": 1,
+        "Chessus": 8
+      }
+    }
+  },
+  {
+    "match_eca8861a-9953-4e68-b54f-4fdb4b01efd1": {
+      "total_kills": 60,
+      "players": [
+        "Assasinu Credi",
+        "Chessus",
+        "Dono da Bola",
+        "Isgalamido",
+        "Mal",
+        "Oootsimo",
+        "Zeh"
+      ],
+      "kills": {
+        "Mal": 1,
+        "Oootsimo": -1,
+        "Assasinu Credi": 3,
+        "Dono da Bola": 3,
+        "Chessus": 5,
+        "Zeh": 7,
+        "Isgalamido": 6
+      }
+    }
+  },
+  {
+    "match_601c5c4d-9542-4b15-bc34-2242a72a52d7": {
+      "total_kills": 20,
+      "players": [
+        "Assasinu Credi",
+        "Chessus",
+        "Dono da Bola",
+        "Isgalamido",
+        "Mal",
+        "Oootsimo",
+        "Zeh"
+      ],
+      "kills": {
+        "Dono da Bola": -2,
+        "Isgalamido": 5,
+        "Oootsimo": 4,
+        "Assasinu Credi": -3,
+        "Chessus": 0,
+        "Zeh": 0,
+        "Mal": 0
+      }
+    }
+  },
+  {
+    "match_95614268-a185-488f-9eb2-2605ed617071": {
+      "total_kills": 160,
+      "players": [
+        "Assasinu Credi",
+        "Chessus",
+        "Dono da Bola",
+        "Isgalamido",
+        "Mal",
+        "Oootsimo",
+        "Zeh"
+      ],
+      "kills": {
+        "Dono da Bola": 3,
+        "Assasinu Credi": 20,
+        "Chessus": 13,
+        "Mal": -6,
+        "Zeh": 13,
+        "Isgalamido": 26,
+        "Oootsimo": 13
+      }
+    }
+  },
+  {
+    "match_07fb7d19-5df0-49ff-939f-af5d5f529fb1": {
+      "total_kills": 6,
+      "players": [
+        "Assasinu Credi",
+        "Dono da Bola",
+        "Isgalamido",
+        "Oootsimo",
+        "Zeh"
+      ],
+      "kills": {
+        "Isgalamido": -1,
+        "Oootsimo": 2,
+        "Assasinu Credi": 0,
+        "Dono da Bola": -1,
+        "Zeh": 2
+      }
+    }
+  },
+  {
+    "match_f52890a1-05f3-42ca-8316-bc757de3db27": {
+      "total_kills": 122,
+      "players": [
+        "Assasinu Credi",
+        "Chessus",
+        "Dono da Bola",
+        "Isgalamido",
+        "Mal",
+        "Oootsimo",
+        "Zeh"
+      ],
+      "kills": {
+        "Isgalamido": 22,
+        "Zeh": 5,
+        "Chessus": 7,
+        "Dono da Bola": 2,
+        "Mal": -2,
+        "Oootsimo": 9,
+        "Assasinu Credi": 7
+      }
+    }
+  },
+  {
+    "match_e445bb25-ee8d-4f16-8245-ba881893d004": {
+      "total_kills": 3,
+      "players": [
+        "Zeh"
+      ],
+      "kills": {
+        "Zeh": -3
+      }
+    }
+  },
+  {
+    "match_34cd77a4-5c72-4a75-84da-2c9b58473b4e": {
+      "total_kills": 0,
+      "players": [],
+      "kills": {}
+    }
+  },
+  {
+    "match_5bc215c3-d2ba-40db-a17f-e5f69afee119": {
+      "total_kills": 13,
+      "players": [
+        "Assasinu Credi",
+        "Dono da Bola",
+        "Isgalamido",
+        "Mal",
+        "Oootsimo",
+        "Zeh"
+      ],
+      "kills": {
+        "Dono da Bola": -2,
+        "Zeh": 0,
+        "Assasinu Credi": -3,
+        "Oootsimo": 1,
+        "Isgalamido": 0,
+        "Mal": -1
+      }
+    }
+  },
+  {
+    "match_d2c5b6f2-2dc6-432e-a0ed-5480b6db7c07": {
+      "total_kills": 7,
+      "players": [
+        "Assasinu Credi",
+        "Dono da Bola",
+        "Isgalamido",
+        "Mal",
+        "Oootsimo",
+        "Zeh"
+      ],
+      "kills": {
+        "Zeh": 2,
+        "Assasinu Credi": 2,
+        "Isgalamido": 1,
+        "Mal": -1,
+        "Oootsimo": 0,
+        "Dono da Bola": -1
+      }
+    }
+  },
+  {
+    "match_68f83e6c-1fa2-4145-9c2e-a7bc70d63e2e": {
+      "total_kills": 95,
+      "players": [
+        "Assasinu Credi",
+        "Dono da Bola",
+        "Isgalamido",
+        "Mal",
+        "Oootsimo",
+        "Zeh"
+      ],
+      "kills": {
+        "Mal": 2,
+        "Zeh": 20,
+        "Dono da Bola": 14,
+        "Isgalamido": 14,
+        "Assasinu Credi": 9,
+        "Oootsimo": 10
+      }
+    }
+  },
+  {
+    "match_94bf97e0-5497-4a6e-ae08-31a121ff2b68": {
+      "total_kills": 3,
+      "players": [
+        "Assasinu Credi",
+        "Dono da Bola",
+        "Oootsimo",
+        "Zeh"
+      ],
+      "kills": {
+        "Dono da Bola": 2,
+        "Zeh": 0,
+        "Oootsimo": 1,
+        "Assasinu Credi": 0
+      }
+    }
+  },
+  {
+    "match_bdd507d5-853f-4824-9f2c-40930aba1747": {
+      "total_kills": 131,
+      "players": [
+        "Assasinu Credi",
+        "Dono da Bola",
+        "Isgalamido",
+        "Mal",
+        "Oootsimo",
+        "Zeh"
+      ],
+      "kills": {
+        "Dono da Bola": 14,
+        "Isgalamido": 17,
+        "Zeh": 19,
+        "Oootsimo": 22,
+        "Mal": 6,
+        "Assasinu Credi": 19
+      }
+    }
+  }
+]
