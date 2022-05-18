@@ -24,5 +24,13 @@ RSpec.describe Quaker::Parser do
         )
       )
     end
+
+    context "when the log is missing the first init game event" do
+      let(:file_path) { File.join(__dir__, "../fixtures", "qgames-without-init.log") }
+
+      it "returns an empty array" do
+        expect(subject.size).to eq(0)
+      end
+    end
   end
 end
