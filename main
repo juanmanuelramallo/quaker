@@ -1,0 +1,20 @@
+#!/usr/bin/env ruby
+
+# Create a script that prints a report (grouped information) for each match and a player ranking.
+
+require_relative "./lib/quaker"
+require "json"
+
+unless jq = system("which jq", out: "/dev/null")
+  puts "Install jq for a better JSON visualization (https://stedolan.github.io/jq/)\n\n"
+end
+
+matches = Quaker::Parser.new("./qgames.log").parse
+by_means = ARGV.include?("--by-means")
+json = JSON.generate(matches.map { |match| match.to_h(by_means: by_means) })
+
+if jq
+  system("echo '#{json}' | jq .")
+else
+  puts json
+end
